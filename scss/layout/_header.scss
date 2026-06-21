@@ -1,0 +1,134 @@
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+@import "../abstracts/mixins";
+
+#header {
+    padding: 26px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    .headerWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__navbar {
+            display: flex;
+            align-items: center;
+
+            .menu {
+                display: flex;
+                align-items: center;
+
+                >li {
+                    margin-right: 40px;
+                    display: inline-flex;
+                    align-items: center;
+                    position: relative;
+
+                    >a {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #fff;
+                        font-family: "openSans";
+                        text-transform: capitalize;
+                        transition: all 0.3s ease-in-out;
+
+                    }
+
+                    >i {
+                        color: #fff;
+                        margin-left: 4px;
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    .submenu {
+                        position: absolute;
+                        top: 100%; // چسبیدن به پایین li والد
+                        left: 0;
+                        background-color: #fff; // رنگ پس‌زمینه زیرمنو
+                        min-width: 200px;
+                        padding: 15px 0;
+                        border-radius: 8px;
+                        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+                        list-style: none;
+
+                        // حالت اولیه مخفی برای انیمیشن
+                        opacity: 0;
+                        visibility: hidden;
+                        transform: translateY(15px);
+                        transition: all 0.3s ease-in-out;
+                        z-index: 100;
+
+                        li {
+                            width: 100%;
+
+                            a {
+                                display: block;
+                                padding: 8px 20px;
+                                color: #333; // رنگ متن داخل زیرمنو
+                                font-size: 14px;
+                                font-weight: 500;
+                                text-decoration: none;
+                                transition: all 0.3s ease;
+
+                                &:hover {
+                                    background-color: rgba($c4, 0.1); // هایلایت با رنگ برند شما
+                                    color: $c4;
+                                    padding-left: 25px; // افکت کوچک جلو رفتن متن
+                                }
+                            }
+                        }
+                    }
+
+
+                    &:hover {
+
+                        >a,
+                        i {
+                            color: $c4;
+                        }
+
+                        .submenu {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateY(0);
+                        }
+                    }
+                }
+                  @include respond(991) {
+                    display: none;
+                }
+            }
+
+            &--mobileMenu {
+                display: none;
+                margin-left: 20px;
+
+                >a {
+                    display: block;
+
+                    i {
+                        color: #fff;
+                        font-size: 22px;
+                    }
+                }
+
+                @include respond(991) {
+                    display: block;
+                }
+            }
+            .btn2{
+                  @include respond(991) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .container-fluid{
+        overflow: visible;
+    }
+}

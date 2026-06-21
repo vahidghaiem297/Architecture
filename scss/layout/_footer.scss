@@ -1,0 +1,112 @@
+@import "../abstracts/variables";
+@import "../abstracts/breakpoints";
+@import "../abstracts/mixins";
+
+#footer {
+    padding-top: 112px;
+    padding-bottom: 63px;
+
+    .footerWrap {
+        &__logo {
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        &__slogan {
+            font-family: "openSans";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            color: #5A7184;
+            margin-bottom: 32px;
+        }
+
+        &__socials {
+            display: flex;
+            align-items: center;
+            padding: 0;
+
+            >li {
+                margin-right: 6px;
+
+                >a {
+                    display: flex;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: rgba(90, 113, 132, .1);
+                    transition: all 0.3s ease-in-out;
+
+                    svg {
+                        fill: #5A7184;
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    &:hover {
+                        background-color: rgba(90, 113, 132, 1);
+
+                        svg {
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+
+            @include respond(767) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__titles {
+            font-size: 18px;
+            font-weight: bold;
+            color: #183B56;
+            font-family: "openSans";
+            margin-bottom: 30px;
+        }
+
+        &__navigations {
+            padding: 0;
+
+            >li {
+                margin-bottom: 24px;
+
+                >a {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #183B56;
+                    font-family: "openSans";
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        color: $c4;
+                    }
+                }
+            }
+        }
+    }
+
+    @include respond(1199) {
+        padding-top: 100px;
+        padding-bottom: 32px;
+    }
+
+    @include respond(991) {
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+
+    @include respond(767) {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    @include respond(567) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

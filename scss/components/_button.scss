@@ -1,0 +1,59 @@
+@import "../abstracts/variables";
+
+.btn2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 131px;
+    height: 48px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "openSans";
+    transition: all 0.3s ease-in-out;
+
+    svg {
+        fill: $c4;
+        margin-left: 16px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        background-color: $c4;
+        color: #fff;
+        border-color: $c4;
+
+        svg {
+            fill: #fff;
+        }
+    }
+
+
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    border-radius: 2000px;
+    color: #fff;
+    background-color: #fff;
+    font-family: "openSans";
+
+    &:hover {
+        background-color: $c4;
+        color: #fff !important;
+        border-color: $c4 !important;
+
+        svg {
+            fill: #fff;
+        }
+    }
+}
