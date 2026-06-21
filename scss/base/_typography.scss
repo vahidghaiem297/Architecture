@@ -1,10 +1,10 @@
 @font-face {
     font-family: "HKGrotesk";
-    src: url("/assets/fonts/hk-grotesk/WEB/HKGrotesk-Bold.eot");
-    src: url("/assets/fonts/hk-grotesk/WEB/HKGrotesk-Bold.eot?#iefix") format("embedded-opentype"),
-        url("/assets/fonts/hk-grotesk/WEB/HKGrotesk-Bold.woff2") format("woff2"),
-        url("/assets/fonts/hk-grotesk/WEB/HKGrotesk-Bold.woff") format("woff"),
-        url("/assets/fonts/hk-grotesk/TTF/HKGrotesk-Bold.ttf") format("truetype");
+    src: url("assets/fonts/hk-grotesk/WEB/HKGrotesk-Bold.eot");
+    src: url("assets/fonts/hk-grotesk/WEB/HKGrotesk-Bold.eot?#iefix") format("embedded-opentype"),
+        url("assets/fonts/hk-grotesk/WEB/HKGrotesk-Bold.woff2") format("woff2"),
+        url("assets/fonts/hk-grotesk/WEB/HKGrotesk-Bold.woff") format("woff"),
+        url("assets/fonts/hk-grotesk/TTF/HKGrotesk-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -12,11 +12,11 @@
 
 @font-face {
     font-family: "HKGrotesk";
-    src: url("/assets/fonts/hk-grotesk/WEB/HKGrotesk-Medium.eot");
-    src: url("/assets/fonts/hk-grotesk/WEB/HKGrotesk-Medium.eot?#iefix") format("embedded-opentype"),
-        url("/assets/fonts/hk-grotesk/WEB/HKGrotesk-Medium.woff2") format("woff2"),
-        url("/assets/fonts/hk-grotesk/WEB/HKGrotesk-Medium.woff") format("woff"),
-        url("/assets/fonts/hk-grotesk/TTF/HKGrotesk-Medium.ttf") format("truetype");
+    src: url("assets/fonts/hk-grotesk/WEB/HKGrotesk-Medium.eot");
+    src: url("assets/fonts/hk-grotesk/WEB/HKGrotesk-Medium.eot?#iefix") format("embedded-opentype"),
+        url("assets/fonts/hk-grotesk/WEB/HKGrotesk-Medium.woff2") format("woff2"),
+        url("assets/fonts/hk-grotesk/WEB/HKGrotesk-Medium.woff") format("woff"),
+        url("assets/fonts/hk-grotesk/TTF/HKGrotesk-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -24,11 +24,11 @@
 
 @font-face {
     font-family: "HKGrotesk";
-    src: url("/assets/fonts/hk-grotesk/WEB/HKGrotesk-Regular.eot");
-    src: url("/assets/fonts/hk-grotesk/WEB/HKGrotesk-Regular.eot?#iefix") format("embedded-opentype"),
-        url("/assets/fonts/hk-grotesk/WEB/HKGrotesk-Regular.woff2") format("woff2"),
-        url("/assets/fonts/hk-grotesk/WEB/HKGrotesk-Regular.woff") format("woff"),
-        url("/assets/fonts/hk-grotesk/TTF/HKGrotesk-Regular.ttf") format("truetype");
+    src: url("assets/fonts/hk-grotesk/WEB/HKGrotesk-Regular.eot");
+    src: url("assets/fonts/hk-grotesk/WEB/HKGrotesk-Regular.eot?#iefix") format("embedded-opentype"),
+        url("assets/fonts/hk-grotesk/WEB/HKGrotesk-Regular.woff2") format("woff2"),
+        url("assets/fonts/hk-grotesk/WEB/HKGrotesk-Regular.woff") format("woff"),
+        url("assets/fonts/hk-grotesk/TTF/HKGrotesk-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -37,14 +37,14 @@
 
 @font-face {
     font-family: "openSans";
-    src: url("/assets/fonts/open-sans/OpenSans-Bold.ttf") format("truetype");
+    src: url("assets/fonts/open-sans/OpenSans-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "openSans";
-    src: url("/assets/fonts/open-sans/OpenSans-Semibold.ttf") format("truetype");
+    src: url("assets/fonts/open-sans/OpenSans-Semibold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -52,7 +52,7 @@
 
 @font-face {
     font-family: "openSans";
-    src: url("/assets/fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
+    src: url("assets/fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
